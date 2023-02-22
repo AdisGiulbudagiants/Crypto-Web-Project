@@ -1,0 +1,16 @@
+.githubName, .discordName, .vkName, .telegramName, .navName, .arrowName {
+  width: 70px;
+  height: 70px;
+}
+
+.githubName:hover, .discordName:hover, .vkName:hover, .telegramName:hover {
+  transform: scale(1.2);
+}
+
+.arrowName {
+  @apply animate-bounce;
+}
+.arrowName:hover {
+  transform: scale(1.095);
+  cursor: pointer;
+}

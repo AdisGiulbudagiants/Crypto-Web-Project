@@ -1,0 +1,93 @@
+.main
+    width: 100%
+    min-height: 200px
+    border-radius: 10px
+    @apply bg-primary grid
+
+.mainHeader
+    width: 80%
+    min-height: 120px
+    border-radius: 10px
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 12px 0px rgba(170,255,255,0.5)
+    @apply bg-primary my-10 text-center justify-items-center mx-auto
+    &__text
+        font-size: 5rem
+        color: #525252
+
+.search
+    display: flex
+    // justify-content: center\
+    @apply justify-center
+
+.input
+    height: 40px
+    width: 50%
+    border-radius: 10px
+    font-size: 30px
+    @apply bg-primary text-background flex justify-center mb-10 mr-5 pl-3 pt-1
+    &::placeholder
+        font-size: 30px
+        @apply text-background
+
+.header
+    width: 90%
+    // margin-top: 1%
+    border-radius: 20px
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 0px rgba(85,85,85,0.4)
+    @apply bg-background mx-auto inline-grid grid-cols-7 my-3
+    &__name,&__price,&__high,&__low,&__percent,&__time,&__logo
+        font-size: 1.4rem
+        @apply text-white self-center mx-auto
+
+.pack
+    height: 100px
+    width: 90%
+    margin: 1% 0 1% 0
+    border-radius: 20px
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 0px rgba(85,85,85,0.4)
+    @apply bg-background mx-auto inline-grid grid-cols-7
+    &:hover
+        border-top: 5px solid white
+        background: #666
+        @apply  duration-200 ease-in-out cursor-pointer
+
+.name,.price, .date,.high,.low,.change
+    @apply text-white self-center
+
+.id
+    font-size: 1.3rem
+.symbol
+    font-size: 1.15rem
+
+.price,.high,.low
+    font-size: 2rem
+
+.change,.date
+    font-size: 1.4rem
+
+.arrow
+    @apply justify-center flex mt-3
+
+.footer
+    @apply text-center
+    &__main
+        @apply my-10
+    &__text
+        font-size: 25px
+        @apply text-primary
+    &__just,.purple
+        font-size: 25px
+        @apply text-purple-500
+
+hr
+    margin: 0
+    width: 80%
+    @apply border-primary
+
+h2,p,h1
+    margin: 0
+
+img
+    width: 80px
+    height: 80px
+    @apply self-center mx-auto

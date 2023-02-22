@@ -1,0 +1,23 @@
+.main {
+  width: 100%;
+  height: 70px;
+  border-radius: 0 0 10px 10px;
+  @apply bg-primary p-1  flex;
+}
+
+.icon {
+  @apply mr-64;
+}
+
+.links {
+  @apply flex justify-center;
+}
+
+.home, .aboutMe, .crypto {
+  font-size: 35px;
+  @apply text-background flex items-center mx-auto mr-6;
+}
+.home:hover, .aboutMe:hover, .crypto:hover {
+  transform: scale(1.075);
+  @apply text-white cursor-pointer;
+}
