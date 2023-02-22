@@ -83,21 +83,6 @@
   @apply justify-center flex mt-3;
 }
 
-.footer {
-  @apply text-center;
-}
-.footer__main {
-  @apply my-10;
-}
-.footer__text {
-  font-size: 25px;
-  @apply text-primary;
-}
-.footer__just, .footer .purple {
-  font-size: 25px;
-  @apply text-purple-500;
-}
-
 hr {
   margin: 0;
   width: 80%;

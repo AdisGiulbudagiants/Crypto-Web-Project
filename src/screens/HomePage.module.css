@@ -1,0 +1,20 @@
+.main {
+  @apply text-primary mx-auto;
+}
+
+.welcome {
+  @apply mt-60;
+}
+
+.header {
+  font-size: 80px;
+}
+
+.text {
+  font-size: 40px;
+  @apply mt-40 animate-bounce;
+}
+
+.header, .text {
+  @apply justify-center flex;
+}
