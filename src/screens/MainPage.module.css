@@ -15,6 +15,7 @@
 .mainHeader__text {
   font-size: 5rem;
   color: #525252;
+  @apply cursor-default;
 }
 
 .search {
@@ -38,7 +39,7 @@
   width: 90%;
   border-radius: 20px;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 0px rgba(85, 85, 85, 0.4);
-  @apply bg-background mx-auto inline-grid grid-cols-7 my-3;
+  @apply bg-background mx-auto inline-grid grid-cols-7 my-3 cursor-default;
 }
 .header__name, .header__price, .header__high, .header__low, .header__percent, .header__time, .header__logo {
   font-size: 1.4rem;

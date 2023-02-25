@@ -1,5 +1,5 @@
 .footer {
-  @apply text-center;
+  @apply text-center cursor-default;
 }
 .footer__main {
   @apply my-10;

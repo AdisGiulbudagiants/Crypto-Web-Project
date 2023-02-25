@@ -17,6 +17,11 @@ const Nav = () => {
           <SvgStorage id="github" />
         </a>
         <a
+          href="https://www.linkedin.com/in/adis-giulbudagiants-developer/"
+          target="_blank">
+          <SvgStorage id="linkedIn" />
+        </a>
+        <a
           href="https://discordapp.com/users/478565463857823748/"
           target="_blank">
           <SvgStorage id="discord" />
