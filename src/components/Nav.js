@@ -12,6 +12,22 @@ const Nav = () => {
         <p className={styles.aboutMe}>About me</p>
         <p className={styles.crypto}>Crypto Info</p>
       </div>
+      <div className={styles.social}>
+        <a href="https://github.com/AdisGiulbudagiants" target="_blank">
+          <SvgStorage id="github" />
+        </a>
+        <a
+          href="https://discordapp.com/users/478565463857823748/"
+          target="_blank">
+          <SvgStorage id="discord" />
+        </a>
+        <a href="https://t.me/AbuDabiSida" target="_blank">
+          <SvgStorage id="telegram" />
+        </a>
+        <a href="https://vk.com/id383399628" target="_blank">
+          <SvgStorage id="vk" />
+        </a>
+      </div>
     </div>
   )
 }
