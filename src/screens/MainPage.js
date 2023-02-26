@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react"
-import axios from "axios"
 import { Link } from "react-scroll"
-import Loading from "../components/Loading"
-import styles from "./MainPage.module.css"
+import axios from "axios"
 import SvgStorage from "../components/SvgStorage"
 import Footer from "../components/Footer"
+import styles from "./MainPage.module.css"
 
 const MainPage = () => {
   const [crypto, setCrypto] = useState([])
   const [input, setInput] = useState("")
-  const [isLoading, setIsLoading] = useState(false)
 
   const url =
     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h"
@@ -24,9 +22,6 @@ const MainPage = () => {
         console.log(err)
         alert(`Возникла ошибка: ${err}`)
       })
-      .finally(() => {
-        setIsLoading(false)
-      })
   }
   useEffect(fetchCrypto, [])
 
@@ -36,10 +31,6 @@ const MainPage = () => {
       crypto.symbol.toLowerCase().includes(input.toLowerCase())
     )
   })
-
-  if (isLoading) {
-    return <Loading />
-  }
 
   const updatedDate = (date) => {
     const res = Date.parse(date)

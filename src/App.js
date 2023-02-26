@@ -4,6 +4,7 @@ import MainPage from "./screens/MainPage"
 import AboutMe from "./screens/AboutMe"
 import MainLayout from "./components/MainLayout"
 import "./App.css"
+import NotFound from "./screens/NotFound"
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
             <Route index element={<HomePage />} />
             <Route path="main" element={<MainPage />} />
             <Route path="aboutme" element={<AboutMe />} />
-            <Route path="*" element={<h1>Not Found</h1>} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </div>
@@ -25,4 +26,3 @@ function App() {
 export default App
 
 //Нужно сделать отдельный компонент который будет выводиться если странице не найдена
-//Нужно убрать компонент Loading впринципе, он бесполезен
