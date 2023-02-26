@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import SvgStorage from "./SvgStorage"
 import styles from "./Nav.module.css"
 
@@ -8,9 +9,22 @@ const Nav = () => {
         <SvgStorage className={styles.svg} id="nav" />
       </div>
       <div className={styles.links}>
-        <p className={styles.home}>Home</p>
-        <p className={styles.aboutMe}>About me</p>
-        <p className={styles.crypto}>Crypto Info</p>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "link")}
+          to="."
+          end>
+          <p>Home</p>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "link")}
+          to="main">
+          <p>Crypto</p>
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "link")}
+          to="aboutme">
+          <p>About me</p>
+        </NavLink>
       </div>
       <div className={styles.social}>
         <a href="https://github.com/AdisGiulbudagiants" target="_blank">

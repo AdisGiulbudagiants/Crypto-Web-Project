@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import { Link } from "react-scroll"
 import Loading from "../components/Loading"
-import Nav from "../components/Nav"
 import styles from "./MainPage.module.css"
 import SvgStorage from "../components/SvgStorage"
 import Footer from "../components/Footer"
@@ -50,7 +49,6 @@ const MainPage = () => {
 
   return (
     <div>
-      <Nav />
       <div className={styles.mainHeader}>
         <h1 className={styles.mainHeader__text}>Crypto Information</h1>
       </div>

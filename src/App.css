@@ -2,3 +2,15 @@
   max-width: 1160px;
   margin: 0 auto;
 }
+
+.active, .link {
+  font-size: 35px;
+  @apply text-background flex items-center mx-auto mr-6 no-underline;
+}
+.active:hover, .link:hover {
+  transform: scale(1.075);
+}
+
+.active {
+  @apply text-blue-600;
+}

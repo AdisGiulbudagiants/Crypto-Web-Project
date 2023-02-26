@@ -1,11 +1,9 @@
-import Nav from "../components/Nav"
 import styles from "./AboutMe.module.css"
 import photo from "../DSC_1795.JPG"
 
 const AboutMe = () => {
   return (
     <>
-      <Nav />
       <div className={styles.main}>
         <div className={styles.leftWrapper}>
           <img className={styles.photo} src={photo} alt="My Photo" />

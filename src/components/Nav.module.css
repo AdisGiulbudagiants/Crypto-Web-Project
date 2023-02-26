@@ -10,7 +10,7 @@
 }
 
 .links {
-  @apply flex justify-center;
+  @apply flex items-center;
 }
 
 .social {
@@ -20,13 +20,4 @@
 a {
   height: 40px;
   margin: 0 0 0 10px;
-}
-
-.home, .aboutMe, .crypto {
-  font-size: 35px;
-  @apply text-background flex items-center mx-auto mr-6;
-}
-.home:hover, .aboutMe:hover, .crypto:hover {
-  transform: scale(1.075);
-  @apply text-white cursor-pointer;
 }
